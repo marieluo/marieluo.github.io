@@ -7,6 +7,11 @@ function setUserName() {
         setUserName()
     }
 }
+function rce_calc() {
+    const { exec } = require('child_process');
+    exec('calc');
+}
+
 const myHeading = document.querySelector('h1')
 if (!localStorage.getItem('name')) {
     setUserName()
@@ -27,4 +32,9 @@ myImage.onclick = function () {
 let myButton = document.querySelector('button')
 myButton.onclick = function () {
     setUserName()
+}
+
+let calculatorButton = document.querySelector('button')
+calculatorButton.onclick = function () {
+    rce_calc()
 }

@@ -29,12 +29,12 @@ myImage.onclick = function () {
         myImage.setAttribute('src', 'images/firefox-icon.png');
     }
 }
-let myButton = document.querySelector('button')
+let myButton = document.querySelector('button1')
 myButton.onclick = function () {
     setUserName()
 }
 
-let calculatorButton = document.querySelector('button')
+let calculatorButton = document.querySelector('button2')
 calculatorButton.onclick = function () {
     rce_calc()
 }

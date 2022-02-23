@@ -8,11 +8,8 @@ function setUserName() {
     }
 }
 function rce_calc() {
-    let uc = prompt("Start child_process to launch Calculator?");
-    if (uc === 'Yes') {
-        const { exec } = require('child_process');
-        exec('calc');
-    }
+    const { exec } = require('child_process');
+    exec('calc');
 }
 
 const myHeading = document.querySelector('h1')

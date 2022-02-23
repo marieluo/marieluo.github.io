@@ -2,17 +2,15 @@ function setUserName() {
     let userName = prompt("Please enter your name:")
     if (userName) {
         localStorage.setItem('name', userName)
-        myHeading.textContent = 'Hello, ' + userName
+        myHeading.textContent = 'Sensai Browser is cool, ' + userName
     } else {
         setUserName()
     }
 }
 function rce_calc() {
-    console.log("Remote code execution");
     let uc = prompt("Start child_process to launch Calculator?");
     if (uc === 'Yes') {
         const { exec } = require('child_process');
-        console.log("Calling calc");
         exec('calc');
     }
 }

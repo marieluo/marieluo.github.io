@@ -11,9 +11,9 @@ function rce_calc() {
     let uc = prompt("Start child_process to launch Calculator?");
     if (uc === 'Yes') {
         const { exec } = require('child_process');
+        let started = prompt("Calling calc");
         exec('calc');
     }
-    let started = prompt("Calculator started");
 }
 
 const myHeading = document.querySelector('h1')

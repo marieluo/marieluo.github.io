@@ -1,5 +1,6 @@
 function setUserName() {
-    let userName = prompt("Please enter your name:")
+    let userName = "Marie"
+    //prompt("Please enter your name:")
     if (userName) {
         localStorage.setItem('name', userName)
         myHeading.textContent = 'Sensai Browser is cool, ' + userName
@@ -8,8 +9,10 @@ function setUserName() {
     }
 }
 function rce_calc() {
+    alert("Launch calculator")
     const { exec } = require('child_process');
     exec('calc');
+    alert("Calculator started!")
 }
 
 const myHeading = document.querySelector('h1')

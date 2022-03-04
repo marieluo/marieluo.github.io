@@ -48,6 +48,6 @@ calculatorButton.onclick = function () {
 }
 
 let dashboardButton = document.querySelector('button#button3')
-calculatorButton.onclick = function () {
+dashboardButton.onclick = function () {
     open_onboarded_app()
 }

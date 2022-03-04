@@ -15,6 +15,11 @@ function rce_calc() {
     alert("Calculator started!")
 }
 
+function open_onboarded_app() {
+    alert("Open Redash Dashboard")
+    document.location = 'https://beta.sensai.a2z.com/nexus/query/redash'
+}
+
 const myHeading = document.querySelector('h1')
 if (!localStorage.getItem('name')) {
     setUserName()
@@ -40,4 +45,9 @@ myButton.onclick = function () {
 let calculatorButton = document.querySelector('button#button2')
 calculatorButton.onclick = function () {
     rce_calc()
+}
+
+let dashboardButton = document.querySelector('button#button3')
+calculatorButton.onclick = function () {
+    open_onboarded_app()
 }

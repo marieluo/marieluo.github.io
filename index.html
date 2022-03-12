@@ -5,6 +5,37 @@
     <title>My test page</title>
     <link href="http://fonts.googleapis.com/css?family=Redressed&display=swap" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <style type="text/css"><!--
+            *{
+                margin:0;
+                padding:0;
+            }
+            body {
+                background:#ffffff;
+            }
+            .button
+            {
+                padding:5px;
+                background:#6699CC;
+                left:275px;
+                width:120px;
+                border: 1px solid #336699;
+            }
+            #content {
+                width: 800px;
+                height: 300px;
+                margin-top: 150px ;
+                margin-left: 600px;
+            }
+            #clickjacking
+            {
+                 position: absolute;
+                left: 172px;
+                top: 60px;
+                filter: alpha(opacity=0);
+                opacity:0.5
+            }
+        //--></style>
   </head>
   <body>
     <h1>Sensai Browser is cool</h1>
@@ -19,7 +50,7 @@
     </ul>
 
     <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
-    <iframe src="https://beta.sensai.a2z.com/asci/firefly" width="800" height="400" scrolling="no" frameborder="none">
+    <iframe id="clickjacking" src="https://beta.sensai.a2z.com/asci/firefly" width="800" height="400" scrolling="no" frameborder="none">
     </iframe>
     <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
     <button id="button1">Change user</button>
